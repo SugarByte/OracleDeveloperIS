@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+	<taxpayer>
+		<name>String</name>
+		<egn>1234567890</egn>
+		<type>1</type>
+		<bulstat>1234567890</bulstat>
+		<caddress>String</caddress>
+	</taxpayer>
+	<hasrepresentative>false</hasrepresentative>
+	<representative>
+		<name>String</name>
+		<egn>1234567890</egn>
+		<type>2</type>
+	</representative>
+	<docs>
+		<docenum>
+			<id>String</id>
+			<fields>
+				<field>
+					<name>String</name>
+					<value>String</value>
+				</field>
+			</fields>
+		</docenum>
+		<docenum>
+			<id>String</id>
+			<fields>
+				<field>
+					<name>String</name>
+					<value>String</value>
+				</field>
+			</fields>
+		</docenum>
+	</docs>
+	<reason>String</reason>
+	<email>String</email>
+</doc>
