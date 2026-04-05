@@ -84,27 +84,42 @@ END;
 Да — най-често дори по-просто:
 
 🔹 Вариант 1: Чист SQL (най-препоръчван)
+
 SELECT 
+
     u.username,
+
     u.login_name,
+
     u.office,
+
     s.system_name,
+
     r.role_name
+
 FROM p_users u
+
 LEFT JOIN p_user_roles ur ON u.user_id = ur.user_id
+
 LEFT JOIN p_roles r ON ur.role_id = r.role_id
+
 LEFT JOIN p_systems s ON r.system_id = s.system_id
+
 WHERE (:p_office IS NULL OR u.office = :p_office)
+
   AND (:p_system_name IS NULL OR s.system_name = :p_system_name)
+
   AND (:p_role_name IS NULL OR r.role_name = :p_role_name)
+
 ORDER BY u.username;
+
 
 ✔ По-просто
 ✔ По-бързо
 ✔ По-лесно за поддръжка
 
 🔹 Вариант 2: View + параметризиране в приложението
-View без параметри
+View без параметри;
 Филтри в application layer
 
 🔹 Вариант 3: Materialized View
