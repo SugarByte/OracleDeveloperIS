@@ -31,11 +31,11 @@ SELECT * FROM v_user_roles;
 
 
 
-🧾 2. XML ETL Process
+🧾 2. XML ETL Процес
 
 Обработка на XML данни чрез staging таблица.
 
-Flow
+Процес
 -------------------------------------------
 
 1.Зареждане в xml_staging
@@ -49,30 +49,30 @@ Flow
 3.Трансформация чрез XMLTABLE
 
 4.Запис в:
-    x_documents
-    x_taxpayers
-    x_representatives
-    x_doc_enums
-    x_doc_fields
+    - x_documents
+    - x_taxpayers
+    - x_representatives
+    - x_doc_enums
+    - x_doc_fields
 
 5.Маркиране като DONE
 
 
-🚀 Run
+🚀 Стартиране
 -------------------------------------------
 BEGIN
   load_xml_bulk;
 END;
 
-🛠️ Concepts
+🛠️ Концепция
 -------------------------------------------
     Pipelined Functions
     XMLTABLE
     ETL / Staging pattern
     Error handling (rollback + logging)
 
-📌 Notes
+📌 Бележки
 -------------------------------------------
-Подходящо за ETL и Data Warehouse сценарии
-Демонстрира работа с XML в Oracle
+Подходящо за ETL и Data Warehouse сценарии.
+Демонстрира работа с XML в Oracle.
 Лесно разширяемо с допълнителни валидации
