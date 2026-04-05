@@ -8,6 +8,7 @@
 📁 Files
 pipe.sql – user roles справка чрез pipelined function
 LoadXML.sql – XML processing и зареждане в релационен модел
+
 🧩 1. User Roles (Pipelined Function)
 
 Реализира справка за:
