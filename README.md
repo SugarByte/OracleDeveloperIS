@@ -151,10 +151,10 @@ Pipelined function е: мощен инструмент, подходящ при 
   BEGIN
     load_xml_bulk;
   END;
+  
 
 🛠️ Концепция
 -------------------------------------------
-    Pipelined Functions
     XMLTABLE
     ETL / Staging pattern
     Error handling (rollback + logging)
