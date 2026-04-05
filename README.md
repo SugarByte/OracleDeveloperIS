@@ -13,7 +13,7 @@
 
 - LoadXML.sql – XML processing и зареждане в релационен модел
 
-🧩 1. User Roles (Pipelined Function)
+# 🧩 1. User Roles (Pipelined Function)
 
 Реализира справка за:
 -------------------------------------------
@@ -119,7 +119,7 @@ Pipelined function е: мощен инструмент, подходящ при 
 Но: за този конкретен случай чист SQL е по-добър избор
 
 
-🧾 2. XML ETL Процес
+# 🧾 2. XML ETL Процес
 
 Обработка на XML данни чрез staging таблица.
 
